@@ -1,19 +1,5 @@
-# hello-web-design-001
+# Hello web design 1
 
-## Project setup
-```
-npm install
-```
+# What is this?
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### This is a simple front web design app powered by Vue js.

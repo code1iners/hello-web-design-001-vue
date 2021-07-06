@@ -1,18 +1,30 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="bg"></div>
+  <div v-if="headerMenuShowing">
+    asdf
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import { mapState } from "vuex";
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+  name: "Home",
+  components: {},
+  computed: {
+    ...mapState(["headerMenuShowing"]),
+  },
+};
 </script>
+
+<style scoped>
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url("../assets/photos/bg_main_001.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+</style>
