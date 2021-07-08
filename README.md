@@ -4,8 +4,19 @@
 
 ### This is a simple front web design app powered by Vue js.
 
-![Main page](https://user-images.githubusercontent.com/67621901/124938196-0f5b3b80-e043-11eb-92fb-34cb727eeb94.png)
+## Used by
 
-![Small size page](https://user-images.githubusercontent.com/67621901/124938205-1124ff00-e043-11eb-9a40-90357d0f7161.png)
+    * Vue js.
+    * Router.
+    * Vuex.
+    * CSS.
+    * HTML.
+    * Javascript.
 
-![Open menu](https://user-images.githubusercontent.com/67621901/124938214-12562c00-e043-11eb-9cc8-27f9500ce166.png)
+## ScreenShots
+
+![Main page](https://user-images.githubusercontent.com/67621901/124939902-788f7e80-e044-11eb-8a65-3c1b66d9f8ff.png)
+
+![Small size page](https://user-images.githubusercontent.com/67621901/124939909-79c0ab80-e044-11eb-9829-264896c2d9d7.png)
+
+![Open menu](https://user-images.githubusercontent.com/67621901/124939916-7b8a6f00-e044-11eb-8d60-50346d0f8a3e.png)
