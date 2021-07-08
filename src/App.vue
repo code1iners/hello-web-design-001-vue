@@ -17,7 +17,7 @@
     </div>
     <div id="header__nav-menu" v-else>
       <img
-        @click="handleHeaderMenuClicked"
+        @click="toggleHeaderMenuShowing"
         src="../src/assets/icons/menu_hamburger_001.png"
         alt=""
       />
@@ -45,13 +45,18 @@ export default {
       if (width < 660) {
         this.setHeaderMenuCollapsed(true);
       } else {
+        this.disableHeaderMenuShowing();
         this.setHeaderMenuCollapsed(false);
       }
     },
     handleClickedMenu() {
       console.log("clicked");
     },
-    ...mapMutations(["setHeaderMenuCollapsed", "handleHeaderMenuClicked"]),
+    ...mapMutations([
+      "setHeaderMenuCollapsed",
+      "toggleHeaderMenuShowing",
+      "disableHeaderMenuShowing",
+    ]),
   },
   computed: {
     ...mapState(["headerMenuCollapsed"]),
@@ -69,6 +74,8 @@ body {
 }
 #app {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 /* common start */
 
@@ -83,7 +90,7 @@ body {
   justify-content: space-around;
   align-items: center;
   letter-spacing: 2px;
-  position: fixed;
+  /* position: fixed; */
   z-index: 1;
   background-color: white;
 }
@@ -99,9 +106,6 @@ body {
 }
 #header__home > span {
   font-size: 1.3rem;
-}
-
-#header__nav-menu {
 }
 
 .header__nav-link {

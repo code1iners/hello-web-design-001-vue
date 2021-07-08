@@ -9,8 +9,12 @@ export default createStore({
     setHeaderMenuCollapsed(state, status) {
       state.headerMenuCollapsed = status;
     },
-    handleHeaderMenuClicked(state) {
+    toggleHeaderMenuShowing(state) {
       state.headerMenuShowing = !state.headerMenuShowing;
+    },
+    disableHeaderMenuShowing(state) {
+      state.headerMenuShowing = false;
+      console.log(state.headerMenuShowing);
     },
   },
   actions: {},
